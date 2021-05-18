@@ -7,6 +7,7 @@ from PIL import Image
 import io
 import sys
 import logging
+from prometheus_fastapi_instrumentator import Instrumentator
 
 from model.predict import predict_image
 
@@ -46,3 +47,5 @@ async def predict(file: UploadFile = File(...)):
 @app.get("/")
 def hello():
     return {'send image to /predict to classify cat vs dog'}
+
+Instrumentator().instrument(app).expose(app)

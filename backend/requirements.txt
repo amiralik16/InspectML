@@ -7,3 +7,4 @@ numpy
 Pillow
 matplotlib
 python-multipart
+prometheus_fastapi_instrumentator
