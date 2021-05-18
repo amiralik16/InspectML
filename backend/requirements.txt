@@ -1,0 +1,9 @@
+# These should be versioned but leaving unversioned for now
+fastapi
+uvicorn
+torch
+torchvision
+numpy
+Pillow
+matplotlib
+python-multipart
