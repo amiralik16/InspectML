@@ -1,9 +1,10 @@
 # These should be versioned but leaving unversioned for now
 fastapi
 uvicorn
-torch
-torchvision
+torch == 1.8.1
+torchvision == 0.9.1
 numpy
 Pillow
 matplotlib
 python-multipart
+prometheus_fastapi_instrumentator
